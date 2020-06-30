@@ -23,7 +23,7 @@ export default function Contact() {
         <form name="contact" action="/success" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-            <label htmlFor="yourname">Your Name:</label>
+            <label htmlFor="yourname">Your Name: </label>
             <input type="text" name="name" id="yourname" />
           </p>
           <p>
