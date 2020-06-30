@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 
@@ -6,14 +7,17 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next Starter!</title>
+        <title>Avocado!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <Header />
+        <Header text="Welcome to the demo!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started by clicking our contact page:
+          <Link href="/contact">
+            <a>Click here!!!!1!</a>
+          </Link>
         </p>
       </main>
 
@@ -50,9 +54,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+            Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         }
 
         * {
